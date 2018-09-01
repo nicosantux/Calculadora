@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1535837568 source:c:\users\intel\desktop\santux calculadora\calculadora\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+
