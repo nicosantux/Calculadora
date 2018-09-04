@@ -1,16 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "funciones.h"
+#include "operador.h"
 
-int elegirOpcion (void);
-float primerOperando (void);
-float segundoOperando (void);
-int submenu (void);
-float funcionSuma (float, float);
-float funcionResta (float, float);
-float funcionDivision (float, float);
-float funcionMultiplicacion (float, float);
-int funcionFactorialUno (float);
-int funcionFactorialDos (float);
+
 
 int main()
 {
@@ -165,131 +158,5 @@ int main()
 }
 
 
-int elegirOpcion(void)
-{
-    int opcionMenu;
 
-    printf("\nIngrese una opcion: ");
-    scanf("%d", &opcionMenu);
 
-    return opcionMenu;
-}
-
-float primerOperando(void)
-{
-    float operando;
-
-    printf("\nIngrese el primer operando: ");
-    scanf("%f", &operando);
-
-    return operando;
-}
-
-float segundoOperando (void)
-{
-    float operando;
-
-    printf("\nIngrese el segundo operando: ");
-    scanf("%f", &operando);
-
-    return operando;
-}
-
-int submenu (void)
-{
-    int opcionSubmenu;
-
-    printf("Ingrese una opcion: ");
-    scanf("%d", &opcionSubmenu);
-
-    return opcionSubmenu;
-}
-
-float funcionSuma (float operandoUno, float operandoDos)
-{
-    float resultado;
-
-    resultado = operandoUno + operandoDos;
-
-    return resultado;
-}
-
-float funcionResta (float operandoUno, float operandoDos)
-{
-    float resultado;
-
-    resultado = operandoUno - operandoDos;
-
-    return resultado;
-}
-
-float funcionDivision (float operandoUno, float operandoDos)
-{
-    float resultado;
-
-    if(operandoDos != 0)
-    {
-        resultado = operandoUno / operandoDos;
-    }
-
-    return resultado;
-}
-
-float funcionMultiplicacion(float operandoUno, float operandoDos)
-{
-    float resultado;
-
-    resultado = operandoUno * operandoDos;
-
-    return resultado;
-}
-
-int funcionFactorialUno (float operandoUno)
-{
-    int numeroUno;
-    int resultado = 1;
-
-    numeroUno = operandoUno;
-
-    if(numeroUno == operandoUno && numeroUno > 0)
-    {
-        do
-        {
-            resultado = resultado * numeroUno;
-            numeroUno--;
-
-        }
-        while(numeroUno >= 1);
-    }
-    else if(numeroUno == operandoUno && numeroUno == 0)
-    {
-        resultado = 1;
-    }
-
-    return resultado;
-}
-
-int funcionFactorialDos (float operandoDos)
-{
-    int numeroDos;
-    int resultado = 1;
-
-    numeroDos = operandoDos;
-
-    if(numeroDos == operandoDos && numeroDos > 0)
-    {
-        do
-        {
-            resultado = resultado * numeroDos;
-            numeroDos--;
-
-        }
-        while(numeroDos >= 1);
-    }
-    else if(numeroDos == operandoDos && numeroDos == 0)
-    {
-        resultado = 1;
-    }
-
-    return resultado;
-}

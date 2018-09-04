@@ -3,3 +3,19 @@
 	<stdio.h>
 	<stdlib.h>
 
+1536062649 source:c:\users\alumno\desktop\calculadora\calculadora\funciones.c
+	"operador.h"
+
+1536062649 c:\users\alumno\desktop\calculadora\calculadora\operador.h
+
+1536062649 source:c:\users\alumno\desktop\calculadora\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"operador.h"
+
+1536062649 c:\users\alumno\desktop\calculadora\calculadora\funciones.h
+
+1536062649 source:c:\users\alumno\desktop\calculadora\calculadora\operador.c
+	"funciones.h"
+
